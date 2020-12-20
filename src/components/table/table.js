@@ -12,9 +12,9 @@ export default class Table extends Component {
     }
 
     render() {
-
         return (
-            <table className="table table-dark" id="main-table" style={{backgroundImage: `url(${HeroBg})`}}>
+            // style={{backgroundImage: `url(${HeroBg})`}}
+            <table className="table table-dark" id="main-table">
                 <thead>
                 <tr>
                     <th>Артикль</th>
@@ -28,18 +28,22 @@ export default class Table extends Component {
                     <td>APPLE iPhone 12 64Gb</td>
                     <td>3</td>
                 </tr>
-                <tr className="table-active">
+                <tr>
                     <td>MRT42RU/A</td>
                     <td>APPLE iMac</td>
-                    <td>1</td>
+                    <td>2</td>
                 </tr>
                 <tr>
                     <td>MV7N2RU/A</td>
                     <td>APPLE AirPods</td>
                     <td>6</td>
                 </tr>
+                <tr>
+                    <td>MQD32RU/A</td>
+                    <td>APPLE MacBook Air 13</td>
+                    <td>4</td>
+                </tr>
                 </tbody>
-
             </table>
         )
     };

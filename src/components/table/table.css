@@ -3,6 +3,9 @@
     position: relative;
     z-index: 1;
 
+    font-weight: 500;
+    text-align: center;
+
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -12,16 +15,12 @@
 .table thead th {
     vertical-align: bottom;
     border-bottom: 2px solid #dee2e6;
-    background-color: rgba(0, 0, 0, .15);
-}
-
-.table-active, .table-active > td, .table-active > th {
-    background-color: rgba(255, 255, 255, .050);
+    background-color: rgba(0, 0, 0, .3);
 }
 
 .table-dark {
     color: #fff;
-    background-color: #454d55;
+    background-color: #202124;
 }
 
 .table-dark thead th {
@@ -29,6 +28,6 @@
 }
 
 .table-dark td, .table-dark th, .table-dark thead th {
-    padding: 5px;
+    padding: 12px;
     border-color: #dee2e6;
 }

@@ -3,6 +3,8 @@ import './header.css';
 import SwapiService from "../../services/swapi-service";
 
 import logoImage from "./img/logo-img-light.svg";
+import Logo from "../logo";
+import LightTumbler from "../light-tumbler/light-tumbler";
 
 export default class Header extends Component {
 
@@ -19,10 +21,13 @@ export default class Header extends Component {
                 <div className="page-header__wrapper">
                     <div className="container">
                         <div className="row">
-                            <div className="col-12">
-                                <a href="/">
-                                    <img className="logo" src={logoImage} alt="Great Steve"/>
-                                </a>
+                            <div className="col-12 col-md-6">
+                                <Logo/>
+                            </div>
+                            <div className="col-12 col-md-6">
+                                <div className="d-flex justify-content-end">
+                                    <LightTumbler/>
+                                </div>
                             </div>
                         </div>
                     </div>

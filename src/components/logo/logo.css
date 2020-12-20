@@ -1,7 +1,4 @@
-.page-header__wrapper {
-    padding: 20px 0;
-}
-
-.logo {
+.logo svg {
     max-width: 200px;
+    transition: fill, opacity .2s ease-in-out;
 }
