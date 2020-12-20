@@ -1,0 +1,34 @@
+.table {
+    width: 100%;
+    position: relative;
+    z-index: 1;
+
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-collapse: collapse;
+}
+
+.table thead th {
+    vertical-align: bottom;
+    border-bottom: 2px solid #dee2e6;
+    background-color: rgba(0, 0, 0, .15);
+}
+
+.table-active, .table-active > td, .table-active > th {
+    background-color: rgba(255, 255, 255, .050);
+}
+
+.table-dark {
+    color: #fff;
+    background-color: #454d55;
+}
+
+.table-dark thead th {
+    border-bottom: 1px solid;
+}
+
+.table-dark td, .table-dark th, .table-dark thead th {
+    padding: 5px;
+    border-color: #dee2e6;
+}
