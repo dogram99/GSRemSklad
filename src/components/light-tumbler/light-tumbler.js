@@ -7,19 +7,17 @@ export default class LightTumbler extends Component {
         light: true
     }
 
-    onCheckboxChange = (e) => {
-        this.setState({
-            light: false
-        })
-    };
-
     render() {
+        const {updateLightStatus} = this.props;
+
         return (
             <div className="pr-2">
                 <input className="light-tumbler"
                        id="light-tumbler"
                        type="checkbox"
-                       onChange={this.onCheckboxChange}
+                       onChange={() => {
+                           updateLightStatus(this.state.light)
+                       }}
                 />
             </div>
         );

@@ -1,3 +1,8 @@
+#root,
+#inner-app {
+    min-height: 100vh;
+}
+
 body {
     min-width: 320px;
     margin: 0;
@@ -8,7 +13,7 @@ body {
     font-weight: 400;
     color: #fff;
 
-    background-color: #000;
+    /*background-color: #000;*/
     background-repeat: repeat;
     background-size: auto;
 
@@ -43,6 +48,14 @@ img {
     height: 100%;
 
     background-color: rgba(0, 0, 0, .4);
+}
+
+.dark-color-theme {
+    background-color: #000;
+}
+
+.light-color-theme {
+    background-color: #2b2f32;
 }
 
 .btn {

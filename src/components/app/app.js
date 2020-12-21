@@ -1,6 +1,5 @@
 import React, {Component} from 'react';
 import './app.css';
-import SwapiService from '../../services/swapi-service';
 
 import Header from "../header";
 import Table from '../table';
@@ -11,16 +10,33 @@ import SearchPanel from "../search-panel";
 
 export default class App extends Component {
 
-    swapiService = new SwapiService();
-
     state = {
-        hasError: false
+        hasError: false,
+        light: false,
+    }
+
+    updateLightStatus = (status) => {
+        this.setState(({light}) => {
+                return {
+                    light: !light
+                }
+            }
+        )
     }
 
     render() {
+        const {light} = this.state;
+
+        let classNames = 'light-color-theme';
+
+        if (light) {
+            classNames = 'dark-color-theme';
+        }
+
         return (
-            <div>
-                <Header/>
+            <div className={classNames} id='inner-app'>
+                {this.state.name}
+                <Header updateLightStatus={this.updateLightStatus}/>
                 <main>
                     <section className="main-table">
                         <div className="container">
