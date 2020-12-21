@@ -1,5 +1,16 @@
-.page-footer__bottom {
+.light-color-theme .page-footer__bottom {
+    color: #000000;
+    background-color: #f2f2f2;
+    box-shadow: 0 9px 19px rgba(255, 255, 255, .3)
+}
+
+.light-color-theme .page-footer .copyright a {
+    color: #000;
+}
+
+.dark-color-theme .page-footer__bottom {
     background-color: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 9px 19px rgba(255, 255, 255, .15)
 }
 
 .page-footer .copyright {
@@ -16,7 +27,6 @@
 }
 
 .page-footer .copyright a {
-    color: #ffffff;
     font-weight: 500;
 }
 

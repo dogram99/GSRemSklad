@@ -1,7 +1,6 @@
 import React, {Component} from 'react';
 import './table.css';
 import SwapiService from "../../services/swapi-service";
-import HeroBg from './bg.jpg';
 
 export default class Table extends Component {
 

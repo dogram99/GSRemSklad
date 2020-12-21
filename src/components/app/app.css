@@ -51,11 +51,15 @@ img {
 }
 
 .dark-color-theme {
-    background-color: #000;
+    background-color: #171615;
 }
 
 .light-color-theme {
     background-color: #2b2f32;
+}
+
+#inner-app {
+    transition: all .3s ease-in-out;
 }
 
 .btn {
@@ -99,6 +103,18 @@ img {
 
 .btn:not(:disabled):not(.disabled) {
     cursor: pointer;
+}
+
+@media(max-width: 992px) {
+    .btn {
+        font-size: .9rem;
+    }
+}
+
+@media(max-width: 767px) {
+    .btn {
+        font-size: .6rem;
+    }
 }
 
 .h-100 {

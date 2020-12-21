@@ -1,9 +1,13 @@
-.search-panel {
+.search-panel .search-input {
+    width: 100%;
+    max-width: 240px;
+    flex-grow: 1;
+    margin-left: auto;
 }
 
-.search-panel .search-input {
-  width: 100%;
-  max-width: 240px;
-  flex-grow: 1;
-  margin-left: auto;
+@media (max-width: 767px) {
+    .search-panel .search-input {
+        max-width: 100%;
+        margin-left: 0;
+    }
 }

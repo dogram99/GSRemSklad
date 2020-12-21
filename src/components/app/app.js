@@ -41,10 +41,10 @@ export default class App extends Component {
                     <section className="main-table">
                         <div className="container">
                             <div className="row mt-3 mb-4">
-                                <div className="col-12 col-md-6">
+                                <div className="col-12 pb-4 pb-md-0 col-md-8">
                                     <ItemStatusFilter/>
                                 </div>
-                                <div className="col-12 col-md-6">
+                                <div className="col-12 col-md-4">
                                     <div className="search-panel">
                                         <SearchPanel/>
                                     </div>

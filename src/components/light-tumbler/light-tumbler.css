@@ -5,7 +5,7 @@
     color: #fdea7b;
     display: inline-flex;
     align-items: center;
-    margin: auto;
+    margin: auto 0;
     padding: 0.15em;
     width: 3em;
     height: 1.5em;
@@ -13,6 +13,7 @@
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
+    cursor: pointer;
 }
 
 .light-tumbler:before, .light-tumbler:after {

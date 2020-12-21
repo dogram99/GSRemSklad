@@ -18,11 +18,11 @@ export default class Header extends Component {
                 <div className="page-header__wrapper">
                     <div className="container">
                         <div className="row">
-                            <div className="col-12 col-md-6">
+                            <div className="col-8">
                                 <Logo/>
                             </div>
-                            <div className="col-12 col-md-6">
-                                <div className="d-flex justify-content-end">
+                            <div className="col-4">
+                                <div className="d-flex justify-content-end align-content-center h-100 ">
                                     <LightTumbler updateLightStatus={updateLightStatus}/>
                                 </div>
                             </div>
