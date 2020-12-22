@@ -1,22 +1,23 @@
 import React from 'react';
 
 const filterButtons = [
-    {name: 'all', label: 'Аккумулятор'},
-    {name: 'active', label: 'Ориг Дисплей'},
-    {name: 'done', label: 'Копия Дисплей'}
+    {name: 'all', label: 'Все'},
+    {name: 'battery', label: 'Аккумулятор'},
+    {name: 'original_display', label: 'Ориг Дисплей'},
+    {name: 'copy_display', label: 'Копия Дисплей'}
 ];
 
 const ItemStatusFilter = ({filter, onFilterChange = () => {}}) => {
 
     const buttons = filterButtons.map(({name, label}) => {
         const isActive = name === filter;
-        const classNames = 'btn ' + (isActive ? 'btn-info' : 'btn-outline-secondary');
+        const classNames = 'btn btn-primary mr-2 ' + (isActive ? 'btn-info' : 'btn-outline-secondary');
 
         return (
             <button key={name}
                     type="button"
                     onClick={() => onFilterChange(name)}
-                    className={classNames} className="btn btn-primary mr-2">{label}</button>
+                    className={classNames}>{label}</button>
         );
     });
 

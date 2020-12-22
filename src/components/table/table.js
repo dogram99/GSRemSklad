@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import './table.css';
 import SwapiService from "../../services/swapi-service";
+import TableItem from "../table-item";
 
 export default class Table extends Component {
 
@@ -11,9 +12,19 @@ export default class Table extends Component {
     }
 
     render() {
+        const {items} = this.props;
+
+        const elements = items.map((item) => {
+            const {id, ...itemProps} = item;
+            return (
+                <tr key={id}>
+                    <TableItem{...itemProps}/>
+                </tr>
+            );
+        });
+
         return (
-            // style={{backgroundImage: `url(${HeroBg})`}}
-            <table className="table table-dark" id="main-table">
+            <table className="table" id="main-table">
                 <thead>
                 <tr>
                     <th>Артикль</th>
@@ -22,26 +33,7 @@ export default class Table extends Component {
                 </tr>
                 </thead>
                 <tbody>
-                <tr>
-                    <td>MGJ83RU/A</td>
-                    <td>APPLE iPhone 12 64Gb</td>
-                    <td>3</td>
-                </tr>
-                <tr>
-                    <td>MRT42RU/A</td>
-                    <td>APPLE iMac</td>
-                    <td>2</td>
-                </tr>
-                <tr>
-                    <td>MV7N2RU/A</td>
-                    <td>APPLE AirPods</td>
-                    <td>6</td>
-                </tr>
-                <tr>
-                    <td>MQD32RU/A</td>
-                    <td>APPLE MacBook Air 13</td>
-                    <td>4</td>
-                </tr>
+                {elements}
                 </tbody>
             </table>
         )

@@ -25,8 +25,8 @@ export default class SwapiService {
     _transformDetail = (detail) => {
         return {
             id: this._extractId(detail),
-            article: detail.name,
-            name: detail.name,
+            label: detail.label,
+            article: detail.article,
             quantity: detail.quantity,
         }
     }
