@@ -12,10 +12,10 @@ export default class App extends Component {
 
     state = {
         hasError: false,
-        light: false,
+        light: true,
         items: [
-            {id: 1, label: 'APPLE iPhone 12 64Gb', article: 'MGJ83RU/A', category: 'battery', quantity: 6},
-            {id: 2, label: 'APPLE iMac 21.5', article: 'MRT42RU/A', category: 'original_display', quantity: 3},
+            {id: 1, label: 'APPLE iPhone 12 64Gb', article: 'MGJ83RU/A', category: 'original_display', quantity: 6},
+            {id: 2, label: 'APPLE iMac 21.5', article: 'MRT42RU/A', category: 'battery', quantity: 3},
             {id: 3, label: 'Apple AirPods Pro', article: 'MV7N2RU/A', category: 'copy_display', quantity: 4},
             {id: 4, label: 'APPLE MacBook Air 13', article: 'MQD32RU/A', category: 'battery', quantity: 2}
         ],
@@ -73,7 +73,6 @@ export default class App extends Component {
 
         return (
             <div className={classNames} id='inner-app'>
-                {this.state.name}
                 <Header updateLightStatus={this.updateLightStatus}/>
                 <main>
                     <section className="main-table">
@@ -81,6 +80,7 @@ export default class App extends Component {
                             <div className="row mt-3 mb-4">
                                 <div className="col-12 pb-4 pb-md-0 col-md-8">
                                     <ItemStatusFilter
+                                        light={light}
                                         filter={filter}
                                         onFilterChange={this.onFilterChange}/>
                                 </div>

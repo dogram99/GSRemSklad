@@ -7,11 +7,11 @@ const filterButtons = [
     {name: 'copy_display', label: 'Копия Дисплей'}
 ];
 
-const ItemStatusFilter = ({filter, onFilterChange = () => {}}) => {
+const ItemStatusFilter = ({filter, light, onFilterChange = () => {}}) => {
 
     const buttons = filterButtons.map(({name, label}) => {
         const isActive = name === filter;
-        const classNames = 'btn btn-primary mr-2 ' + (isActive ? 'btn-info' : 'btn-outline-secondary');
+        const classNames = 'btn  ' + (light ? 'btn-dark' : 'btn-light');
 
         return (
             <button key={name}

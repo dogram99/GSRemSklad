@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import ReactDOM from 'react-dom';
 import './footer.css';
+import Clock from "../clock";
 
 export default class Footer extends Component {
 
@@ -18,8 +19,7 @@ export default class Footer extends Component {
                             <div className="row">
                                 <div className="col-4 col-md-6">
                                     <div className="d-flex align-items-center h-100">
-                                        <span
-                                            className="ml-3"> {new Date().toLocaleTimeString()}</span> {/* TODO: Допилить автообновление времени */}
+                                        {<Clock/>}
                                     </div>
                                 </div>
                                 <div className="col-8 col-md-6">
