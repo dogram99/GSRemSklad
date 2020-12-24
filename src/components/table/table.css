@@ -16,45 +16,15 @@
     vertical-align: bottom;
 }
 
-.light-color-theme .table {
-    color: #000;
-    background-color: #eee;
-}
-
-.light-color-theme .table thead,
-.light-color-theme .table tbody {
-    box-shadow: 0 5px 19px rgba(0, 0, 0, .15)
-}
-
-.light-color-theme .table thead th {
-    background-color: rgba(255, 255, 255, .3);
-}
-
-.dark-color-theme .table {
-    color: #fff;
-    background-color: #202124;
-}
-
-.dark-color-theme .table thead,
-.dark-color-theme .table tbody {
-    box-shadow: 0 5px 19px rgba(255, 255, 255, .15)
-}
-
-.dark-color-theme .table thead th {
-    border-bottom: 2px solid #dee2e6;
-    background-color: rgba(0, 0, 0, .3);
-}
-
 .table thead th {
     border-bottom: 1px solid;
 }
 
 .table td, .table th, .table thead th {
     padding: 15px;
-    border-color: #dee2e6;
 }
 
-@media(max-width: 767px) {
+@media (max-width: 767px) {
     .table {
         max-width: 100%;
         overflow: auto;

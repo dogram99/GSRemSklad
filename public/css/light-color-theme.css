@@ -1,0 +1,18 @@
+.light-color-theme .table {
+    color: #000;
+    background-color: #eee;
+}
+
+.light-color-theme .table thead,
+.light-color-theme .table tbody {
+    box-shadow: 0 5px 19px rgba(0, 0, 0, .15)
+}
+
+.light-color-theme .table thead th {
+    background-color: #ededed;
+    border-color: #fafafa;
+}
+
+.light-color-theme tbody tr td {
+    border-color: #f2f2f2;
+}
