@@ -1,14 +1,34 @@
-.dark-color-theme .table {
+.dark-color-theme {
     color: #fff;
-    background-color: #202124;
 }
 
-.dark-color-theme .table thead,
-.dark-color-theme .table tbody {
-    box-shadow: 0 5px 19px rgba(255, 255, 255, .15)
+.dark-color-theme .table {
+    color: #000;
+    background-color: #fff;
 }
 
 .dark-color-theme .table thead th {
-    border-bottom: 2px solid #dee2e6;
-    background-color: rgba(0, 0, 0, .3);
+    background-color: rgba(237, 237, 237, 1);
+    border-bottom: 0;
+}
+
+.dark-color-theme .table tbody td {
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.dark-color-theme .table tbody tr.warning-quantity {
+    background-color: rgba(238, 238, 238, 1);
+}
+
+.dark-color-theme .table tbody tr.warning-quantity {
+    color: #664d03;
+    background-color: #fff3cd;
+    border-color: #ffecb5;
+}
+
+.dark-color-theme .table tbody tr.empty-quantity {
+    color: #842029;
+    background-color: #f8d7da;
+    border-color: #f5c2c7;
 }

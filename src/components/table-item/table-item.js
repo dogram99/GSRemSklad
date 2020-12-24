@@ -2,6 +2,8 @@ import React from 'react';
 import './table-item.css';
 
 const TableItem = ({label, article, quantity}) => {
+
+
     return (
         <React.Fragment>
             <td>{article}</td>

@@ -16,8 +16,13 @@ export default class Table extends Component {
 
         const elements = items.map((item) => {
             const {id, ...itemProps} = item;
+            let trClasses = '';
+
+            trClasses += (itemProps.quantity < 3) ? 'warning-quantity' : '';
+            trClasses += (itemProps.quantity <= 0) ? ' empty-quantity' : '';
+
             return (
-                <tr key={id}>
+                <tr key={id} className={trClasses}>
                     <TableItem{...itemProps}/>
                 </tr>
             );
