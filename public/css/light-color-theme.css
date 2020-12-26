@@ -1,3 +1,26 @@
 .light-color-theme {
     color: #000;
 }
+
+.light-color-theme .page-footer__bottom {
+    color: #fff;
+    background-color: #32383e
+}
+
+.light-color-theme .page-footer__bottom a {
+    color: #fff;
+}
+
+.light-color-theme .table {
+    color: #fff;
+    background-color: #212529
+}
+
+.light-color-theme .table thead th {
+    border-bottom: 2px solid #32383e;
+    background-color: #32383e
+}
+
+.light-color-theme .table tbody tr {
+    border-top: 1px solid #32383e;
+}

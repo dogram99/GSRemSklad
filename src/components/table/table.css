@@ -14,14 +14,35 @@
 
 .table thead th {
     vertical-align: bottom;
+    border-bottom: 1px solid;
 }
 
-.table thead th {
-    border-bottom: 1px solid;
+.table tbody tr {
+    transition: all .2s ease-in-out;
 }
 
 .table td, .table th, .table thead th {
     padding: 15px;
+}
+
+.table tbody tr:hover {
+    text-decoration: underline;
+}
+
+.table tbody tr td {
+    width: 33.333%;
+}
+
+.table tbody tr.warning-quantity {
+    color: #664d03;
+    background-color: #fff3cd;
+    border-color: #ffecb5;
+}
+
+.table tbody tr.empty-quantity {
+    color: #842029;
+    background-color: #f8d7da;
+    border-color: #f5c2c7;
 }
 
 @media (max-width: 767px) {

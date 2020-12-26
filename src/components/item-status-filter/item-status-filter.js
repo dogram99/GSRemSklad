@@ -11,7 +11,7 @@ const ItemStatusFilter = ({filter, light, onFilterChange = () => {}}) => {
 
     const buttons = filterButtons.map(({name, label}) => {
         const isActive = name === filter;
-        const classNames = 'btn  ' + (light ? 'btn-dark' : 'btn-light');
+        const classNames = 'btn ' + (light ? 'btn-dark' : 'btn-primary');
 
         return (
             <button key={name}

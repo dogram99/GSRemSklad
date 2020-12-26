@@ -14,13 +14,13 @@ export default class App extends Component {
         light: true,
         items: [
             {id: 1, label: 'APPLE iPhone 12 64Gb', article: 'MGJ83RU/A', category: 'original_display', quantity: 6},
-            {id: 2, label: 'APPLE iMac 21.5', article: 'MRT42RU/A', category: 'battery', quantity: 0},
+            {id: 2, label: 'APPLE iMac 21.5', article: 'MRT42RU/A', category: 'original_display', quantity: 0},
             {id: 3, label: 'Apple AirPods Pro', article: 'MV7N2RU/A', category: 'copy_display', quantity: 4},
             {id: 4, label: 'APPLE MacBook Air 13', article: 'MQD32RU/A', category: 'battery', quantity: 2},
-            {id: 5, label: 'APPLE iPhone 12 64Gb', article: 'MGJ83RU/A', category: 'original_display', quantity: 7},
-            {id: 6, label: 'APPLE MacBook Air 13', article: 'MQD32RU/A', category: 'battery', quantity: 1},
-            {id: 7, label: 'APPLE iMac 21.5', article: 'MRT42RU/A', category: 'battery', quantity: 4},
-            {id: 8, label: 'Apple AirPods Pro', article: 'MV7N2RU/A', category: 'copy_display', quantity: 9},
+            {id: 5, label: 'APPLE iPhone 12 64Gb', article: 'MGJ96RU/A', category: 'original_display', quantity: 7},
+            {id: 6, label: 'APPLE MacBook Air 13', article: 'MQD23RU/A', category: 'copy_display', quantity: 1},
+            {id: 7, label: 'APPLE iMac 21.5', article: 'MRT24RU/A', category: 'battery', quantity: 4},
+            {id: 8, label: 'Apple AirPods Pro', article: 'MV6N9RU/A', category: 'copy_display', quantity: 9},
         ],
         filter: 'all',
         search: ''
