@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import './table.css';
 import SwapiService from "../../services/swapi-service";
 import TableItem from "../table-item";
+import PropTypes from "prop-types";
 
 export default class Table extends Component {
 
@@ -43,4 +44,8 @@ export default class Table extends Component {
             </table>
         )
     };
+};
+
+Table.propTypes = {
+    items: PropTypes.array
 };

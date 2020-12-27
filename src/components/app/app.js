@@ -1,11 +1,10 @@
 import React, {Component} from 'react';
-
+import './app.css';
 import Header from "../header";
-import Table from '../table';
-import ItemStatusFilter from "../item-status-filter";
-import Footer from "../footer";
 import SearchPanel from "../search-panel";
-
+import ItemStatusFilter from "../item-status-filter";
+import Table from '../table';
+import Footer from "../footer";
 
 export default class App extends Component {
 
@@ -13,14 +12,18 @@ export default class App extends Component {
         hasError: false,
         light: true,
         items: [
-            {id: 1, label: 'APPLE iPhone 12 64Gb', article: 'MGJ83RU/A', category: 'original_display', quantity: 6},
-            {id: 2, label: 'APPLE iMac 21.5', article: 'MRT42RU/A', category: 'original_display', quantity: 0},
-            {id: 3, label: 'Apple AirPods Pro', article: 'MV7N2RU/A', category: 'copy_display', quantity: 4},
-            {id: 4, label: 'APPLE MacBook Air 13', article: 'MQD32RU/A', category: 'battery', quantity: 2},
-            {id: 5, label: 'APPLE iPhone 12 64Gb', article: 'MGJ96RU/A', category: 'original_display', quantity: 7},
-            {id: 6, label: 'APPLE MacBook Air 13', article: 'MQD23RU/A', category: 'copy_display', quantity: 1},
-            {id: 7, label: 'APPLE iMac 21.5', article: 'MRT24RU/A', category: 'battery', quantity: 4},
-            {id: 8, label: 'Apple AirPods Pro', article: 'MV6N9RU/A', category: 'copy_display', quantity: 9},
+            {id: 1, label: 'Apple Power Bank 12000mAh', article: 'MGJ29RU/A', category: 'battery', quantity: 4},
+            {id: 2, label: 'Apple iPhone 7 64Gb', article: 'MGJ33RU/A', category: 'copy_display', quantity: 2},
+            {id: 3, label: 'Apple iMac 21.5', article: 'MRT42RU/A', category: 'original_display', quantity: 0},
+            {id: 4, label: 'Apple Power Bank 5000mAh', article: 'MGJ85RU/A', category: 'battery', quantity: 9},
+            {id: 5, label: 'Apple Power Bank 1000mAh', article: 'MGJ96RU/A', category: 'battery', quantity: 2},
+            {id: 6, label: 'Apple iPhone 8 128Gb', article: 'MGJ45RU/A', category: 'copy_display', quantity: 0},
+            {id: 7, label: 'Apple iPhone 6 32Gb', article: 'MGJ812RU/A', category: 'copy_display', quantity: 6},
+            {id: 8, label: 'Apple MacBook Air 13', article: 'MQD32RU/A', category: 'original_display', quantity: 1},
+            {id: 9, label: 'Apple iPhone 11 128Gb', article: 'MGJ83RU/A', category: 'original_display', quantity: 3},
+            {id: 10, label: 'Apple Power Bank 800mAh', article: 'MGJ85RU/A', category: 'battery', quantity: 0},
+            {id: 11, label: 'Apple iPhone 12 64Gb', article: 'MGJ83RU/A', category: 'original_display', quantity: 6},
+            {id: 12, label: 'Apple iPhone 6 32Gb', article: 'MGJ812RU/A', category: 'copy_display', quantity: 7},
         ],
         filter: 'all',
         search: ''

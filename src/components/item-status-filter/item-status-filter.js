@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 const filterButtons = [
     {name: 'all', label: 'Все'},
@@ -10,7 +11,7 @@ const filterButtons = [
 const ItemStatusFilter = ({filter, light, onFilterChange = () => {}}) => {
 
     const buttons = filterButtons.map(({name, label}) => {
-        const isActive = name === filter;
+        // const isActive = name === filter;
         const classNames = 'btn ' + (light ? 'btn-dark' : 'btn-primary');
 
         return (
@@ -26,6 +27,14 @@ const ItemStatusFilter = ({filter, light, onFilterChange = () => {}}) => {
             {buttons}
         </div>
     );
+};
+
+
+ItemStatusFilter.propTypes = {
+    filter: PropTypes.string,
+    light: PropTypes.bool,
+    onFilterChange: PropTypes.func
+
 };
 
 export default ItemStatusFilter;

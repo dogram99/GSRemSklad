@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
+import PropTypes from 'prop-types';
 import './header.css';
-
 import Logo from "../logo";
 import LightTumbler from "../light-tumbler/light-tumbler";
 
@@ -32,4 +32,8 @@ export default class Header extends Component {
             </header>
         )
     };
+};
+
+Header.propTypes = {
+    updateLightStatus: PropTypes.func
 };

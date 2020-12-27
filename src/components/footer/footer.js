@@ -1,5 +1,4 @@
 import React, {Component} from 'react';
-import ReactDOM from 'react-dom';
 import './footer.css';
 import Clock from "../clock";
 
@@ -35,17 +34,3 @@ export default class Footer extends Component {
         )
     };
 };
-
-function tick() {
-    const element = (
-        <time className="ml-4">
-            {new Date().toLocaleTimeString()}
-        </time>
-    );
-
-    ReactDOM.render(
-        element,
-        document.getElementById('#time')
-    );
-
-}

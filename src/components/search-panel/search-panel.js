@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-
 import './search-panel.css';
+import PropTypes from "prop-types";
 
 export default class SearchPanel extends Component {
 
@@ -27,3 +27,7 @@ export default class SearchPanel extends Component {
     );
   };
 }
+
+SearchPanel.propTypes = {
+    onSearchChange: PropTypes.func
+};
