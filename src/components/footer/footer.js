@@ -1,16 +1,12 @@
-import React, {Component} from 'react';
+import React from 'react';
 import './footer.css';
 import Clock from "../clock";
+import ErrorBoundary from "../error-boundary";
+import ErrorButton from "../error-button";
 
-export default class Footer extends Component {
-
-    state = {
-        hasError: false
-    }
-
-    render() {
-
-        return (
+const Footer = () => {
+    return (
+        <ErrorBoundary>
             <footer className="page-footer">
                 <div className="page-footer__wrapper">
                     <div className="container">
@@ -23,7 +19,10 @@ export default class Footer extends Component {
                                 </div>
                                 <div className="col-8 col-md-6">
                                     <div className="copyright">
-                                        <span className="mr-4"><a href="mailto:rewq_gol_47@mail.ru">Техническая поддержка</a></span>
+                                        <div className="d-flex align-items-center justify-content-end">
+                                            <ErrorButton/>
+                                            <span className="mr-4"><a href="mailto:rewq_gol_47@mail.ru">Техническая поддержка</a></span>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -31,6 +30,8 @@ export default class Footer extends Component {
                     </div>
                 </div>
             </footer>
-        )
-    };
+        </ErrorBoundary>
+    )
 };
+
+export default Footer;
